@@ -174,3 +174,19 @@ function wpm_add_taxonomies()
     register_taxonomy('prix', 'vehicule', $args_prix);
 }
 
+function get_form() {
+    $chaine = 0 ;
+    if (!empty($_POST["email"]) ){
+        $chaine = $_POST["email"];
+    }else{
+    $chaine =  '<form method="POST" action="" >
+        <label for="email">inscription Newsletter email</label><br>
+        <input type="mail" name="email" id="email" placeholder="Votre email">
+        <input type="submit" value="inscription" name="envoi" id="envoi">
+    </form>';
+}
+    return $chaine;
+}
+// [form] 
+add_shortcode("form", "get_form");
+
