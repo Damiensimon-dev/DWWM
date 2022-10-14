@@ -1,0 +1,43 @@
+
+
+
+h1{
+    margin-left: 40%;
+}
+
+#form1{
+    border: solid  black;
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#emprunt{
+    margin-top: 20px;
+    margin-left: 221px;
+}
+
+#interet{
+    margin-top: 20px;
+    margin-left: 223px;
+}
+
+#remboursement{
+    margin-top: 20px;
+    margin-left: 57px;
+}
+
+#mensualiter{
+    margin-top: 80px;
+    background-color: beige;
+    margin-left: 10px;
+    padding-right: 50px;
+}
+
+#mensualiter1{
+    margin-left: 280px;
+}
+
+input{
+    width: 20%;
+}

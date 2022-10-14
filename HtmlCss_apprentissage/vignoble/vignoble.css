@@ -1,0 +1,223 @@
+body{
+    background-image: url("images/bg_motif.gif");
+    background-repeat: repeat;
+    padding: 0px;
+    margin: 0px;
+    font-family:'satisfy'; 
+    font-size: 1.2em; 
+}
+a{
+  
+
+   
+}
+h1{
+    text-align: center;
+    color:#fff;
+     padding-top: 20px
+}
+h2{
+    color: white;
+}
+header{
+    height: 80px;
+    width: 100%;
+    position:fixed;
+    top: 0px;
+    background-image: url("images/header.png");
+    border-bottom: solid 2px #fff;
+    z-index: 3000;
+}
+
+.logo{
+    float:left;
+    margin-top: 20px;
+}
+figure{
+    text-align: center;
+    z-index: 2;
+}
+figcaption{
+    background-color: white;
+    padding: 5px;
+    color: rgb(149, 3, 3);
+    font-size: 1.5em;  
+}
+figcaption img{
+    margin-top: 20px;
+}
+.bordure{
+    border-top: solid 1px #fff;
+    margin-bottom: 10px;
+}
+.menu,.menu ul {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 30px;
+    list-style: none;
+}
+.menu{
+    text-align: right;
+    font-size: 2em;
+    border: 1px solide white;
+}
+.menu li{
+    display: inline-block;
+}
+.menu ul li{
+display: inherit;
+}
+.menu a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding-right: 50px;
+    padding-bottom: 3px;
+}
+.menu a:hover{
+    color: red;
+}
+.menu ul{
+    position: absolute;
+    left: -999em;
+    text-align: left;
+    margin-top: 0px;
+    margin-left: 30px;
+    background-image: url("images/header.png");
+}
+.menu li:hover ul{
+    left: auto;
+    color: red;
+}
+.submenu>li{
+    border: solid white 1px;
+    text-align: center;
+    padding-left: 10px;
+    margin: 50px;
+
+}
+main {
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top:80px;
+    background-image: url("/images//container2.png");
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.bloc{
+    float: left;
+    width: 30%;
+    margin-left: 20px;
+    background: url("/images/bg_g.png");
+    background-repeat: no-repeat;
+}
+.bloc img{
+    float: right;
+}
+.clear{
+    clear: both;
+    margin: 0px;
+}
+.bloc p{
+    text-align: justify;
+}
+.bloc h2{
+    text-align: center;
+}
+.white{
+    color: #fff;
+}
+#liste{
+    float: left;
+    width: 30%;
+    background-image: url("/images/container2.png");
+    margin-right: 10px;
+    padding: 15px;
+    list-style-image:url("/images/liste.png");
+}
+#liste ul li{
+   border-top: 1px solid white;
+}
+#liste ul li:last-child{
+border-bottom: 1px solid white;
+}
+footer ul li{
+  display : inline;
+ margin-left: 20px;
+ margin-right: 20px;
+  list-style:none;
+  text-align: center;
+}
+footer ul li a{
+color: white;
+text-decoration: none;
+}
+nav{
+    padding-left: 100px;
+}
+footer{
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top:80px;
+    background-image: url("/images//container2.png");
+    padding-left: 20px;
+    padding-right: 20px;
+}
+footer ul{
+   margin: 0px;
+    padding: 0px;
+    padding-top: 20px;
+}
+img.alignLeft{
+    float: left;
+    padding: 10px;
+}
+#pied{
+    float: right;
+}
+.bloc a{
+    background: #aaa;
+    color: #222;
+    display: block;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    text-decoration: none;
+    transition-duration: 2s;
+    transition-property: all;
+    transition-timing-function:cubic-bezier(.17,.67,.83,.67);
+    transition-delay: 500ms;
+    /* transition: 2s all timing linear; */
+
+}
+.bloc a:hover{
+    transform:rotate(-15deg) scale(1.5);
+    color: red;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+
+aside a{
+    background-color: #aaa;
+    color: #222;
+    color: red;
+    display: inline-block;
+    padding: 10px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    background-image: url("/images/lire.png");
+    background-position: left bottom;
+  
+}
+aside a:hover{
+    transform: rotate(-15deg) scale(1.5);
+    transform-origin: 50% 50%;
+    background-image: url("/images/lire.png");
+    background-position: left top;
+}

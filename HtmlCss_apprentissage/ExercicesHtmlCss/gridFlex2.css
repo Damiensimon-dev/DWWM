@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    margin: 2px;
+    color: white;
+    font-size: 50px;
+}
+
+
+html, body{
+    height: 100%;
+}
+
+.container header, aside, article, footer{
+    background-color: #CCCC33;
+}
+
+.containerarticle{
+    display: flex;
+    
+}
+
+
+.containerarticlefooter{
+    font-display: flex;
+}

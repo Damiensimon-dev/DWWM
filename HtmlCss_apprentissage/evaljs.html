@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Damien Simon-Chautemps">
+    <script src="evaljs.js" defer></script>
+    <title>InscriptionAstro.html</title>
+</head>
+<body>
+    <h1>Titre de niveau 1</h1>
+    <h2>Titre de niveau 2</h2>
+    <textarea name="texteLibre">Zone de texte libre</textarea>
+    <form action="" method="">
+        <label for="nomUtilisateur">Nom Utilisateur</label>
+        <input type="text" id="nomUtilisateur" name="nomUtilisateur">
+
+        <label for="prenomUtilisateur">Prénom Utilisateur</label>
+        <input type="text" id="prenomUtilisateur" name="prenomUtilisateur">
+
+        <label for="date">Veuillez saisir votre date de naissance :</label>
+        <!-- <input type="date" id="dateDeNaissance" name="dateDeNaissance"> -->
+        <select name="jourDeNaissance" id="JourDeNaissance"></select>
+        <select name="moisDeNaissance" id="moisDeNaissance"></select>
+        <select name="anneeDeNaissance" id="anneeDeNaissance"></select>
+
+        <label for="pseudo">Pseudo</label>
+        <input type="text" id="pseudo" name="pseudo" readonly="true">
+
+        <button disabled="disabled">Validation</button>
+
+        <button type="reset">Reset</button>
+    </form>
+        
+</body>
+</html>

@@ -1,0 +1,90 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    margin: 0px;
+    grid-template-areas: 
+    "a1 a1 a1 a1"
+    "a2 a3 a4 a4"
+    "a2 a5 a5 a6"
+    "a2 a7 a8 a9"
+    "a2 a10 a10 a10";
+    row-gap: 5px;
+    column-gap: 5px;
+    color: white;
+    font-size: 50px;
+}
+
+html, body{
+    height: 100%;
+}
+
+.container header, aside, article, footer{
+    background-color: #CCCC33;
+}
+
+header{
+    grid-area: a1;
+    padding-left: 15px;
+}
+
+aside{
+    grid-area: a2;
+    padding-left: 15px;
+}
+
+.a1{
+    grid-area: a3;
+    padding-left: 15px;
+}
+
+.a2{
+    grid-area: a4;
+    padding-left: 15px;
+}
+
+.a3{
+    grid-area: a5;
+    padding-left: 15px;
+}
+
+.a4{
+    grid-area: a6;
+    padding-left: 15px;
+}
+
+.a5{
+    grid-area: a7;
+    padding-left: 15px;
+}
+
+.a6{
+    grid-area: a8;
+    padding-left: 15px;
+}
+
+.a7{
+    grid-area: a9;
+    padding-left: 15px;
+}
+
+footer{
+    grid-area: a10;
+    padding-left: 15px;
+}
+
+@media only screen and (max-width: 800px) {
+    
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "a1 a1"
+        "a2 a3"
+        "a2 a4"
+        "a2 a5"
+        "a6 a7"
+        "a8 a9"
+        "a10 a10";  
+    }
+}

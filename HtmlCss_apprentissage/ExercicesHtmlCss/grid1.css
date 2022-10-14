@@ -1,0 +1,97 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 2fr 780px 1fr;
+    grid-template-areas: "header header ads"
+                         "nav article article"
+                         "nav footer footer";
+    margin: 2px;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+.container header, div, nav, section, footer{
+    background-color: #BBCCFF
+}
+
+header{
+    grid-area: header;
+}
+
+h1{
+    padding-left: 15px;
+}
+
+div{
+    grid-area: ads;
+}
+
+div > h2{
+    padding-left: 15px;
+}
+
+nav{
+    grid-area: nav;
+}
+
+nav > h2{
+    padding-left: 15px;
+}
+
+section{
+    grid-area: article;
+    display: grid;
+    grid-template-columns: 4fr 10fr 10fr 20px;
+    grid-template-rows: 100px 3fr 3fr 3fr 50px;
+    grid-template-areas: "h2 h2 h2 h2"
+                         ". article1 article2 ."
+                         ". article3 article4 ."
+                         ". article5 article6 ."
+                         ". . . .";
+    column-gap: 10px;
+    row-gap: 10px;   
+    overflow-y: scroll;                  
+}
+
+.containerarticle > h2{
+    grid-area: h2;
+    padding-left: 20px;
+}
+
+article{
+    background-color: white;
+    
+}
+
+.article1{
+    grid-area: article1;
+}
+
+.article2{
+    grid-area: article2;
+}
+
+.article3{
+    grid-area: article3;
+}
+
+.article4{
+    grid-area: article4;
+}
+
+.article5{
+    grid-area: article5;
+}
+
+.article6{
+    grid-area: article6;
+}
+
+footer{
+    grid-area: footer;
+}
+
+footer > h4{
+    padding-left: 15px;
+}
+

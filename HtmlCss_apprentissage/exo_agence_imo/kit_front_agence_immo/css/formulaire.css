@@ -1,0 +1,65 @@
+.parent{
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    
+}
+
+.enfant{
+    grid-column-start: 2;
+    background-color: rgb(173, 172, 172);
+}
+
+#p1{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+label{
+    margin-left: 30px;
+}
+#nom1{
+    padding-right: 151px;
+}
+
+#prenom1{
+    padding-right: 135px;
+}
+
+#adresse1{
+    padding-right: 132px;
+}
+
+#telephone1{
+    padding-right: 112px;
+}
+
+#email1{
+    padding-right: 140px;
+}
+
+#objetMessage1{
+    padding-right: 30px;
+}
+
+#message1{
+    position: absolute;
+    top: 770px;
+
+}
+
+#message{
+    margin-left: 230px;
+}
+
+#civilite1{
+    padding-right: 142px;
+}
+
+#envoyer{
+    position: absolute;
+    margin-left: 30px;
+    top: 870px;
+}
+
+
+

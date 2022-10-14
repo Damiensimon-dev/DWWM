@@ -1,0 +1,144 @@
+
+main{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    
+}
+
+.contenaire{
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 2fr 2fr 2fr 2fr 1fr  ;
+    grid-template-areas: 
+        "head head"
+        "head1 head2"
+        "photo power"
+        "photo attack"
+        "photo defense"
+        "footer footer";
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    
+    
+}
+
+
+.test{
+    grid-area: head;
+    background-color: green;
+    font-size:x-large;
+}
+
+.character{
+    padding-top: 15px;
+    padding-left: 180px;
+    color: white;
+    
+}
+
+
+
+
+.victories{
+    grid-area: head2;
+    justify-self: left;
+    color: white;
+    
+}
+
+.victories1{
+    grid-area: head2;
+    justify-self: center;
+    color: white;
+    
+    
+}
+
+.played{
+    grid-area: head1;
+    color: white;
+    
+}
+
+.played1{
+    grid-area: head1;
+    justify-self: center;
+    color: white;
+    
+}
+
+.power{
+    grid-area: power;
+    color: white;
+}
+
+.power1{
+    grid-area: power;
+    justify-self: center;
+    color: blueviolet;
+}
+
+.attack{
+    grid-area: attack;
+    color: white;
+}
+
+.attack1{
+    grid-area: attack;
+    justify-self: center;
+    color: red;
+}
+
+.defense{
+    grid-area: defense;
+    color: white;
+}
+
+.defense1{
+    grid-area: defense;
+    justify-self: center;
+    color: blue;
+}
+
+img{
+    background-color: rgb(46, 46, 46);
+    grid-area: photo;
+    width: 200px;
+    
+}
+
+
+
+/* .nomColone{
+    background-color: grey;
+}
+
+#tabCarte{
+    
+    border-collapse: collapse;
+}
+
+#tabCarte tr:nth-child(even){
+    background-color: red;
+}
+
+th{
+    padding: 10px;
+    border: 2px solid black;
+    
+}
+
+td{
+    padding: 10px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+input{
+    margin: 50px;
+} */

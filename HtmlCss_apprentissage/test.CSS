@@ -1,0 +1,149 @@
+
+.codegeass{
+    background-color: black;
+}
+
+.lelouch{
+    background-color: yellow;
+}
+
+.lelouchp1{
+    color: blue;
+    font-weight: bold;
+    position: absolute;
+    left: 3%;
+    top: 15%
+}
+
+.histoirebritanniap1{
+    color: green;
+    font-weight: bold;
+    position: absolute;
+    left: 3%;
+    top: 15%
+}
+
+.britannia{
+    background-color: orange;
+}
+
+.codegeassh1{
+    color:  red;
+    text-align: center;
+    font-size: 60px;
+}
+
+.lelouchh1{
+    color: blue;
+    text-align: center;
+    font-size: 60px;
+}
+
+.histoirebritannia{
+    color: green;
+    text-align: center;
+    font-size: 60px;
+}
+
+.lelouchfigure{
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    color: blue;
+    font-weight: bold;
+}
+
+.histoirebritanniafigure{
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    color: green;
+    font-weight: bold;
+}
+
+.britanniaimg{
+    width: 110%;
+    height: 110%;
+}
+
+button{
+    
+    position: absolute;
+    top: 8%;
+    left: 3%;
+    background-color: black;
+    height: 5%;
+    width: 7%;
+    color: yellow;
+}
+
+nav{
+    width: 80%;
+    background-color: black;
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px red;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+
+.conteneur{
+  margin: 50px 20px;
+  height: 1500px;
+}
+
+    

@@ -1,0 +1,20 @@
+{
+    "name": "stagiaire/4670706-architecture-mvc-php-apprehendez-limites-code-debutant",
+    "description": "mvc avec composer",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Demtop",
+            "email": "mwaa12@live.fr"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Blog\\" : "Blog/"
+        }
+    }
+
+}

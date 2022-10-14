@@ -1,0 +1,3 @@
+function valNum(_chaineDeCharactere) {
+    
+}

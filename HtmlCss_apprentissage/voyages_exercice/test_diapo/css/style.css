@@ -1,0 +1,22 @@
+#carouselExampleCaptions{
+
+    width: 60%;
+    
+}
+
+
+h1{
+    color: white;
+    text-shadow: 1px 1px 1px 1px black;
+    background: #00000022;
+}
+
+p{
+    color: white;
+    text-shadow: 1px 1px 1px 1px black;
+    background: #00000055;
+}
+
+#form1{
+    background-color: gray;
+}

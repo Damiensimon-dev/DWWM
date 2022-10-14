@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<formation>
+    <nomDeFormation>Developpeur web web mobile</nomDeFormation>
+    <groupe>
+        <formateur>Paul Bourgeois</formateur>
+        <stagiaires>
+            <stagiaire>Sabah Dekkoumi</stagiaire>
+            <stagiaire>Kévin Bourguignon</stagiaire>
+            <stagiaire>Océane Ribault</stagiaire>
+            <stagiaire>Denis Albrecht</stagiaire>
+            <stagiaire>Damien Simon-Chautemps</stagiaire>
+        </stagiaires>   
+    </groupe>
+    <date>
+        <debut>15 Novembre 2021</debut>
+        <fin>5 Avril 2023<fin>
+        <stage>21 Novembre 2022 au 17 Mars 2023</stage>
+        <examenFinal>03 Avril 2023 et 04 Avril 2023</examenFinal>
+    </date>
+</formation>

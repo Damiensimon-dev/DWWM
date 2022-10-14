@@ -1,0 +1,24 @@
+.btn{
+	background-color:rgb(146, 78, 30);
+	color: white;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-o-border-radius: 8px;
+	padding: 12px;
+	font-size: 0.8em;
+	border: 0px;
+	position: relative;
+	left: 400px;
+	margin:10px;
+	border: 2px solid #000;
+	font-size: 1.2em;
+
+}
+
+label{
+	display: inline-block;
+	width: 250px;
+	margin-bottom: 20px;
+}

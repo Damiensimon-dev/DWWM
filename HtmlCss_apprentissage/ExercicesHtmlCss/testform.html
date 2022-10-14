@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Damien Simon-Chautemps">
+    <link rel="stylesheet" href="testform.css">
+    <title>Testform</title>
+</head>
+<body>
+    <form action="" method="get">
+        <label for="Name" required="true">Name</label>
+        <input type="text" id="Name" name="Name">
+        <label for="Phone" required="true">Phone</label>
+        <input type="text" id="Phone" name="Phone">
+        <label for="Email" required="true">Email</label>
+        <input type="email" id="Email" name="Email">
+        <fieldset>
+            <legend>Which service do you require?</legend>
+            <input type="radio" id="Plumbing" name="Plumbing">
+            <label for="Plumbing">Plumbing</label>
+            <input type="radio" id="Electricity" name="Plumbing">
+            <label for="Electricity">Electricity</label>
+            <input type="radio" id="Painting" name="Plumbing"> 
+            <label for="Painting">Painting</label>
+        </fieldset>
+        <fieldset>
+            <legend>Wich other service do you nedd ?</legend>
+            <input type="checkbox" id="Architect" name="Architect">
+            <label for="Architect">Architect</label>
+            <input type="checkbox" id="Disinfection" name="Disinfecion">
+            <label for="Disinfecion">Disinfection</label>
+            <input type="checkbox" id="RatExtermination" name="RatExtermination">
+            <label for="RatExtermination">Rat extermination</label>
+        </fieldset>
+        
+    </form>
+    <h1>Menu déroulant sticky HTML et CSS</h1>
+<nav>
+  <ul>
+    <li class="deroulant"><a href="#">véhicule &ensp;</a>
+      <ul class="sous">
+        <li><a href="#">voiture</a></li>
+        <li><a href="#">moto</a></li>
+        <li><a href="#">velo</a></li>
+      </ul>
+    </li>
+    <li class="deroulant"><a href="#">Articles &ensp;</a>
+      <ul class="sous">
+        <li><a href="#">CSS display</a></li>
+        <li><a href="#">CSS position</a></li>
+        <li><a href="#">CSS float</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">A propos</a></li>
+  </ul>
+</nav>
+
+<div class="conteneur">
+  <p>Du contenu sous le menu</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../exo_astro/css/accueil.css">
+    <title>Accueil</title>
+</head>
+<body>
+    <h1>Bonjour</h1>
+    
+
+    <table>
+        <tr>
+            <th>Prénom</th>
+            <th>Nom</th>
+            <th>Pseudo</th>
+            <th>Anniversaire</th>
+            <th>Jour avant Anniversaire</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+          </tr>
+    </table>
+</body>
+<script>
+    
+    function getCookie(_key){
+        let trouve = "cookie non trouvé";
+        let tabCookies = document.cookie.split("; ");
+        for (let i = 0; i < tabCookies.length; i++) {
+            let tabPair = tabCookies[i].split("=");
+            if (tabPair[0] == _key) {
+                trouve = tabPair[1];
+            }
+        }
+
+        return trouve;
+    }
+
+    
+    function nbJoursAnniv() {
+        let tabDate = (getCookie("dateAnniv")).split("/")
+        let dateDuJour = new Date();
+        let anniv = new Date(dateDuJour.getFullYear(),tabDate[1] - 1 , tabDate[0]);
+        let restant = anniv - dateDuJour ;
+        let days = Math.ceil(restant / (1000 * 60 * 60 * 24));
+        
+        if(dateDuJour > anniv)
+        {     
+            
+            let anniv2 = new Date(dateDuJour.getFullYear() + 1 ,tabDate[1] - 1, tabDate[0]);
+            let restant2 = anniv2 - dateDuJour;
+            let days2 = Math.ceil(restant2 / (1000 * 60 * 60 * 24));
+            let jourAvantAnniv = days2;
+            cookie("jourRestant",jourAvantAnniv);
+            
+            
+        }
+        else
+        {
+            let jourAvantAnniv = days;
+            cookie("jourRestant",jourAvantAnniv);
+            
+        }
+        
+    }
+
+    nbJoursAnniv();
+
+    let pseudo = getCookie("pseudo");
+    let nom = getCookie("name");
+    let prenom = getCookie("prenom");
+    let anniversaire = getCookie("dateAnniv");
+    let jourAvantAnniv = getCookie("jourRestant");
+    
+
+    console.log(pseudo);
+    console.log(nom);
+    console.log(prenom);
+    console.log(anniversaire);
+    console.log(jourAvantAnniv);
+    
+    
+    
+    
+    function ecrireAccueil(){
+        let tabDonnee = [pseudo,nom,prenom,anniversaire,jourAvantAnniv];
+
+        document.write(tabDonnee);
+    }
+    
+    ecrireAccueil();
+
+    
+
+
+    function cookie(_nomCookie, _contenueCookie) {
+    let dateJour = new Date();
+    let dateExpire = new Date(dateJour.getFullYear(), dateJour.getMonth(), dateJour.getDate() + 1);
+    let dateExpiration = dateExpire.toUTCString();
+
+    document.cookie = _nomCookie + "=" + _contenueCookie + "; expires = " + dateExpiration + "; SameSite = strict"; 
+
+    
+}   
+</script>
+
+</html>

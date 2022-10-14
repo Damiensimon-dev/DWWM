@@ -1,0 +1,29 @@
+.supercontainer{
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    height: 100vh;
+}
+
+.supercontainer header{
+    background-color:  #CCDDFF;
+    text-align: center;
+    height: 200px;
+}
+
+.supercontainer footer{
+    background-color: #CCDDFF;
+    text-align: center;
+    height: 100px;
+    flex-grow: 1;
+}
+
+.supercontainer aside{
+    background-color: #FFDDCC;
+}
+
+.supercontainer section{
+    background-color: #DDFFCC;
+}
+
+
