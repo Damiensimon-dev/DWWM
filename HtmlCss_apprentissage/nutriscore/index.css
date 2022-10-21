@@ -1,0 +1,138 @@
+body{
+    margin: 0%;
+    background-color: #111;
+    
+}
+
+
+#container{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "titre fielset1 fielset2";
+    
+}
+
+
+h1{
+    color: yellowgreen;
+    grid-area: titre;
+    justify-self: center;
+    font-size: 50px;
+}
+
+#fielset1{
+    grid-area: fielset1;
+    background-color: #444;
+    margin-bottom: 50%;
+    color: white;
+}
+
+#fielset2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "fielset3 fielset4";
+    grid-area: fielset2;
+    background-color: #444;
+    margin-bottom: 50%;
+    color: white;
+    
+}
+
+#fielset3{
+    grid-area: fielset3;
+    width: 100%;
+    padding-right: 5px;
+}
+
+#fielset4{
+    grid-area: fielset4;
+    justify-self: center;
+    
+}
+
+#rechercher{
+    background-color: #444;
+    width: 100%;
+}
+
+
+#nutriment{
+    margin-top: -5%;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 30px;
+    color: white;
+}
+
+#titre{
+    background-color: #444;
+    text-align: center;
+    color: yellowgreen
+
+}
+
+#donnee :hover{
+    background-color: #664;
+}
+
+#donnee{
+    text-align: center;
+}
+
+.test :nth-child(1){
+    color: yellow;
+    background-color: #333;
+}
+
+
+
+#lblname{
+    padding-right: 85%;
+}
+
+.test :nth-child(2){
+    text-align: left;
+    padding-left: 0.5%;
+}
+
+#footer tr :nth-child(1){
+    background-color: #333;
+}
+
+#footer tr :nth-child(2){
+    padding-left: 0.5%;
+}
+
+#footer tr :nth-child(3){
+    text-align: center;
+}
+
+.colorScore[data-color-score = "A"]{
+    background-color: darkgreen;
+}
+
+.colorScore[data-color-score = "B"]{
+    background-color:#009900
+}
+
+.colorScore[data-color-score = "C"]{
+    background-color: #CCCC00;
+}
+
+.colorScore[data-color-score = "D"]{
+    background-color: #CC6600;
+}
+
+.colorScore[data-color-score = "E"]{
+    background-color: #CC0000;
+}
+
+.delete{
+    background-color: #333;
+    color: #CC0000;
+    font-size: large;
+}
